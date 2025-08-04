@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07_formTag</title>
+</head>
+<body>
+  <!-- form 태그 : 정보를 제출하기 위해 범위를 지정하는 역할 -->
+  <form action="">
+      <fieldset>
+        <legend>연습</legend>
+        <label for="email">이메일:</label>
+        <!-- 라벨 태그의 for 값은 연결시키고 싶은 input 값의 id 를 값으로 가짐 -->
+        <!-- <input type="text" name="email" id="email" placeholder="email을 적어주세요."> -->
+        <input type="email" name="email" id="email" placeholder="email을 적어주세요." required>
+        <br>
+        <label for="password">비밀번호:</label>
+        <input type="password" name="password" id="password" minlength="8">
+        <!-- input 태그: 데이터를 입력 받는 태그 -->
+      </fieldset>
+      <fieldset>
+        <input type="number" min="1" max="5">
+        <input type="date">
+        <br>
+        <input type="checkbox" name="foods" value="banana" id="banana" checked>
+        <label for="banana">바나나</label>
+        <input type="checkbox" name="foods" value="apple" id="apple">
+        <label for="apple">사과</label>
+        <br>
+        <input type="radio" name="animals" id="dog">
+        <label for="dog">강아지</label>
+        <input type="radio" name="animals" id="cat">
+        <label for="cat">고양이</label>
+        <br>
+        <select name="poketmon" id="poketmon">
+          <option value="0">피카츄</option>
+          <option value="1">라이츄</option>
+          <option value="2" selected>파이리</option>
+        </select>
+        <br>
+        <input type="hidden" name="test" value="0">
+      </fieldset>
+      <button type="submit">전송</button>
+      <button type="reset">초기화</button>
+      <button type="button">버튼</button>
+  </form>
+  <!-- requser.body.password -->
+  <!-- <form action="/api/login">
+  </form> -->
+  <!-- <form action="06_hyperlink.html">
+      </form> -->
+</body>
+</html>
