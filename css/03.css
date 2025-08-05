@@ -1,0 +1,63 @@
+body {
+  /* font-family : 글꼴을 지정하는 속성 */
+  /* font-family: "Black Han Sans", sans-serif; */
+  font-family: '궁서', '맑은 고딕', '바탕';
+  /* font-family: '맑은 고딕', '바탕'; 일단 제일 먼저 있는 폰트로 설정, 없으면 다음 폰트로 넘어 감 */
+  /* font-weight : 글자의 굵기를 지정하는 속성( 100 ~ 900 ) */
+  font-weight: 100;
+  font-style: normal;
+  /* font-style: italic; */
+  /* font-style: normal; 그냥 웹폰트 설정에서 쓰라는 대로 쓰면 됨 */
+
+  /* font-size: 글자의 크기를 지정하는 속성, px: 모니터 잘 보면 점들로 이루어져 있음. 점 하나가 픽셀. 16팍셀 = 점 16개 */
+  /* px: 픽셀 단위로 폰트 크기를 조절 */
+  /* em : rem과 배율 기준이 다름. 부모 요소 기준(헷갈릴 수 있음, ul > li(부모 ul) >p(부모 li))으로 글자 크기를 배율로 조절 */
+  /* rem : 최상위 요소를 기준으로 글자 크기를 배율로 조절, 품질 보증 기기 정해놓음.(아이폰 몇 버전, 갤럭시 몇 버전, 데스크탑... 이렇게) */
+  
+  /* em, rem 헷갈려서 둘 혼용해서 사용하지 않음. */
+  
+  font-size: 1.5rem;
+  /* font-size: 30px; */
+}
+
+p {
+  font-size: 24px;
+
+  /* color: 폰트 색상 설정 */
+  color: rgb(255, 0, 0);
+
+  /* text-decoration : 선으로 텍스트를 꾸미는 속성 */
+  text-decoration: line-through; /* 기본이 none */
+
+  /* text-align: 텍스트의 정렬 반향 지정 */
+  text-align: center; /* left 기본 */
+}
+
+/* html <이렇게 쓸 때도 있음 {
+  font-size: 16px;
+} */
+
+/* * <이렇게 쓸 때도 있고 {
+  font-size: 16px;
+} */
+
+.box-line-height {
+  background-color: blanchedalmond;
+  height: 100px;
+  /* line-height: 줄 간격 조절. */
+  line-height: 16px;
+  /* letter-spacing: 자간 조절. 폰트의 기본 자간을 사용하지 별도로 css까지 써서 자간 조절을 한 적은 없음. */
+  letter-spacing: 5px;
+  /* word-spacing: 단어 간의 간격 조절 */
+  word-spacing: 20px;
+}
+
+.class-text-transform {
+  /* text-transform: 영어 대소문자 출력 변환 */
+  text-transform: capitalize;
+  /* text-transform: capitalize; 첫 글자만 대문자로. 나머지 그대로. */
+  /* text-shadow: 글자의 그림자 효과를 부여 */
+  /* 가로위치, 세로위치, 그림자 크기, 글자 색상 */
+  text-shadow: 5px 5px 5px #488875;
+}
+

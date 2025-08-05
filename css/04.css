@@ -1,0 +1,13 @@
+.food-list {
+  /* list-style-type (정확한 명칭) : 불릿의 타입 설정 */
+  /* list-style-type: none; 대부분 none 사용함 */
+  /* list-style-type: disc; 기본값 */
+  /* listi-style-position: 목록의 들여쓰기 여부 지정 */
+  /* list-style-position: inside; */
+  /* list-style-position: inside; type이 none이 아니어야 하고 들여쓰기 한 번 더..*/
+  /* listi-style-position: outside; 기본값*/
+  list-style-image: url(../img/11.jpg);
+  background-size: contain; /* 또는 cover */
+  width: 10px; /* li 요소의 너비 설정 */
+  height: 10px; /* li 요소의 높이 설정 */
+}

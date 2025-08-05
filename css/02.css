@@ -1,0 +1,17 @@
+h1 {
+  color: brown;
+  /* color: brown !important; 우선순위 가장 높음. 그래서 !important 쓰면 안 됨. 긴 줄 코드에서 찾기 쉽지 않음. 관리하기 어려움. 인라인도 2순위. 찾기 어려우니까 얘도 쓰지 말기 */
+}
+
+#id-h1 {
+  color: aqua;
+  /* color: aqua; ID 선택자 3순위.. 웬만하면 ID 선택자로 해결이 됨. 정말 안 되면 인라인 쓰고 진짜 안 되겠다 싶으면 !important 쓰기. */
+}
+
+h1 {
+  color: blue;
+}
+
+.class-h1 {
+  color: yellow;
+}

@@ -7,13 +7,18 @@
 </head>
 <body>
   <h1>회원가입을 환영합니다.</h1>
-    <form action="">
+    <!-- <form action=""> -->
+    <form>
       <fieldset>
       <legend>사용자 정보</legend>
         <ul>
+          <!-- li 값을 필수로 하고 싶다 > required 넣기 -->
+           <!-- ul li 할 수도 있지만 특수문자 넣어서 만들어도 됨 -->
           <li>
-            <label for="id">아이디</label>
-            <input type="text" name="id" id="id" placeholder="4자 ~ 10자 사이, 공백없이">
+            <label for="account">아이디</label>
+            <!-- <label for="id">아이디</label> id 예약어로 너무 많이 사용 -->
+            <input type="text" name="account" id="account" placeholder="4자 ~ 10자 사이, 공백없이">
+            <!-- <input type="text" name="id" id="id" placeholder="4자 ~ 10자 사이, 공백없이"> 마찬가지 -->
           </li>
           <li>
             <label for="email">이메일</label>
@@ -21,16 +26,34 @@
           </li>
           <li>
             <label for="password">비밀번호</label>
-            <input type="password" name="password" id="password" placeholder="문자와 숫자, 특수 기호 포함">
+            <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="문자와 숫자, 특수 기호 포함">
+            <!-- <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="문자와 숫자, 특수 기호 포함"> 너무 길어서 보기 불편하면 엔터 쳐서 구분해도 됨 -->
           </li>
           <li>
-            <label for="pw2">비밀번호 확인</label>
-            <input type="password" name="pw2" id="pw2">
+            <label for="pwchk">비밀번호 확인</label>
+            <input 
+            type="password" 
+            name="pwchk" 
+            id="pwchk">
+            <!-- <label for="pw2">비밀번호 확인</label>
+            <input 
+            type="password" 
+            name="pw2" 
+            id="pw2"> -->
           </li>
           <li>
-            가입 경로
+            <label for="join">가입 경로</label>
               <select name="join" id="join">
                 <option value="0" selected>기타</option>
+                <!-- <option value="suggest">추천</option> -->
               </select>
           </li>
           <li>
@@ -41,13 +64,19 @@
       </fieldset>
       <fieldset>
       <legend>이벤트와 새로운 소식</legend>
-        <input type="radio" name="mails" id="o">
+        <input type="radio" name="mails" id="o" value="1">
+        <!-- <input type="radio" name="mails" id="o"> name은 백엔드 때 필요, id는 지금 식별요소 -->
         <label for="o">메일 수신</label>
-        <input type="radio" name="mails" id="x">
+        <input type="radio" name="mails" id="x" value="1" checked>
+        <!-- <input type="radio" name="mails" id="x" value="1" checked> 원래 메일 수신 안 함이 기본적으로 체크되어 있음 -->
+        <!-- <input type="radio" name="mails" id="x"> -->
         <label for="x">메일 수신 안 함</label>
       </fieldset>
-  <button type="submit">가입하기</button>
-  <button type="reset">취소</button>
+    <button type="submit">가입하기</button>
+    <!-- <input type="button" value=""> 옛날 방식.. 요즘에는 안 씀-->
+    <button type="reset">취소</button>
   </form>
+  <!-- 스네이크 기법 : 단어와 단어 사이에 '_'로 연결, user_email -->
+  <!-- 카멜 기법 : 연결되는 단어의 첫글자를 대문자로 작성, userEmail -->
 </body>
 </html>
