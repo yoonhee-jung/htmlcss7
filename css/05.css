@@ -1,0 +1,30 @@
+.div-border-style {
+  /* 테두리의 형태를 지정 */
+  border-style: solid;
+  /* border-style: none; default 값*/
+  
+  /* border-width: 테두리의 두께를 지칭 */
+  border-width: 5px 10px;
+  /* border-width: 5px(상하) 10px(좌우); */
+  /* border-width: 5px(상) 10px(좌우) 15px(하); */
+  /* border-width: 5px(상) 10px(우) 15px(하) 20px(좌); */
+  /* 1개 지정: 사방 테두리 적용 */
+  /* 2개 지정: 상하 -> 좌우 적용 */
+  /* 3개 지정: 상 -> 좌우 -> 하 적용 */
+  /* 4개 지정: 상 -> 우 -> 하 -> 좌 적용 */
+  /* border-top-width */
+
+  /* border-color : 테두리 색 지정 */
+  border-color: #7493f8;
+
+  /* border : 테두리의 두께, 속성, 색상을 한 번에 지정 */
+  border: 5px solid hsl(61, 100%, 82%);
+  /* border: 5px solid #859486; 보통 순서 */
+  /* border: 5px 10px(이렇게는 안 됨) solid #859486; */
+
+  /* border-radius : 테두리의 모서리를 둥글게 처리 */
+  border-radius: 10px;
+  border-top-left-radius: 20px;
+  
+}
+

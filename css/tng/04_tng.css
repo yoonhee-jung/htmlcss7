@@ -1,0 +1,43 @@
+
+*{
+  font-weight: 500;
+}
+
+div {
+  border: 1px solid black;
+  width: 500px;
+  padding: 10px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+
+.title {
+  list-style-type: none;
+  font-size: calc(1.5*1.5*14px);
+  /* font-size: 2rem; 최상위 요소(16px) 기준으로 글자 크기 잡음 */
+  line-height: calc(2*1.5*1.5*14px);
+}
+
+.contents {
+  font-size: calc(1.5*14px);
+  /* font-size: 1.5em; 부모 기준으로 글자 크기 잡음, 헷갈리기 때문에 안 쓰는 게 나음. 기준 1개만 쓰는 게 더 나음 */
+  line-height: calc(2*1.5*14px);
+  list-style-type: none;
+  color: #ad3000;
+  text-indent: 59px;
+}
+
+/*span 말고 .sub-title 이렇게 쓰면 현업에서 쓰기 좋음 의도치 않은 스타일이 들어가거나 할 때도 있기 때문 {
+
+}  */
+
+p {
+  font-size: 14px; 
+  color: black;
+  display: inline;
+  font-weight: 400;
+}

@@ -1,0 +1,67 @@
+/* 
+  블럭 레벨 요소
+  1. 혼자 한줄 다차지 한다.
+  2. 크기를 조절해서 위로 올라갈 공간이 충분한것처럼 보이나, 올라가지 않는다.
+  3. 크기 조절은 가능하다.
+
+  인라인 레벨 요소
+  1. 콘텐츠 크기만큼만 크기가 고정된다.
+  2. 크기 조절이 안 된다.
+  3. 공간이 충분하면 위로 올라온다.
+*/
+
+  /* 보통 초기화 용도로 전체 선택자를 씀 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.div {
+  border: 1px solid #000;
+}
+
+.div-box, h1 {
+  /* display: inline; 요소가 위로 올라옴 */
+  padding: 20px;
+  width: 100px;
+}
+
+span {
+  display: inline-block;
+  width: 50vw;
+  height: 50vh;
+  /* 인라인은 width를 줘도 적용이 안 됨 */
+  padding: 5px;
+  box-sizing: content-box;
+  /* box-sizing: content-box(기본)우리가 생각한 것보다 크기가 더 큼/border-box(보더+패딩+콘텐츠)*/
+  /* 보통 이렇게 씀. *{box-sizing: border-box;} / body{box-sizing: border-box;} */
+}
+
+/* vw, vh (뷰포트기준 단위) : 뷰의 크기(기준점)에 따라 비율로 설정 단위
+   % : 부모 요소의 크기(기준점)에 따라 비율로 설정 단위 */
+
+.div-parent {
+  width: 200px;
+  height: 200px;
+  padding: 10px 15px 20px 30px;
+  margin: 10px auto; 
+  /* margin: 10px auto; 가운데 정렬 */
+}
+
+.div-child {
+  border: 1px solid #855881;
+  width: 50vw;
+  min-width: 400px;
+}
+
+.div-margin {
+  margin: 20px;
+  /* margin: 20px; 마진중첩 : 두 개의 요소가 둘 다 마진을 가지고 있을 때 위치상 상하관계에 중첩되는 부분의 마진을 좀 더 큰 애 것으로 덮어 씀 
+  위치 상 좌우로 있을 때에는 마진 중첩 발생하지 않음. 마진이 그대로 각각 적용됨 */
+  background-color: #ffd992;
+  /* 수평거리, 수직거리, 흐림정도, 번짐정도, 색상, 그림자 방향(기본: 박스의 바깥쪽 부분에 그림자 생김) */
+  box-shadow: 10px 10px 1px 1px #76c6d49d;
+  /* box-shadow: 10px 10px 1px 1px #76c6d49d inset; 박스의 안쪽 */
+}
