@@ -1,0 +1,152 @@
+/* 
+  내가 쓴 코드
+    .wrap {
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: black;
+  padding-left: 20px;
+  height: 150px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  line-height: 90px;
+  height: 90px;
+  width: inherit;
+}
+
+.explain {
+  color: rgb(202, 172, 36);
+  height: 60px;
+  width: inherit;
+}
+
+.content {
+  margin: 0 auto;
+  height: 550px;
+  width: 600px;
+  border: 1px solid black;
+}
+
+.background {
+  background-color: black;
+  height: 40px;
+  width: inherit;
+}
+
+.notice {
+  color: white;
+  padding-left: 15px;
+  line-height: 40px;
+}
+
+.order {
+  border-bottom: 1px solid black;
+
+}
+
+h2 {
+  color: rgb(211, 3, 3);
+  text-align: center;
+}
+
+span {
+  color: blue;
+}
+
+h3 {
+  text-align: center;
+  line-height: 37px;
+}
+
+.time {
+  text-align: center;
+  font-size: 14px;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: black;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.header-info {
+  color: #e99d0f;
+}
+
+/* Main */
+.main-title {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.main-box-base {
+  border: 1px solid #6e6e6e;
+  border-top: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-contents {
+
+}
+
+.main-counsel {
+
+}
+
+.main-sub-title {
+  color: red;
+  margin-bottom: 20px;
+  /* margin-bottom: 20px; 이 부분 왜 margin: 20px이면 박스 위쪽이 띄어지는지? */
+}
+
+.font-color-blue {
+  
+}
+
+.main-word-highlight {
+  color: blue;
+}
+
+.main-contents-bigbold {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.main-contents-margin-bottom {
+  margin-bottom: 20px;
+}

@@ -6,3 +6,4 @@
 img/
 html/video
 # push할 github 파일 내에서 제외하는 것..
+newfolder/
