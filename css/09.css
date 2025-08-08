@@ -1,0 +1,36 @@
+body {
+  background-image: url(../img/linux.png);
+  /* 스크롤이 생길경우 요소의 배경 이미지를 고정 */
+  background-attachment: fixed;
+}
+
+.background-test1 {
+  background-color: rgb(100, 149, 237);
+  border: 3px dotted #000;
+  background-clip: content-box;
+  padding: 10px;
+}
+
+.div-background-img {
+  border: 3px solid rgb(255, 230, 0);
+  width: 1000px;
+  height: 1000px;
+  background-image: url(../img/linux.png), url(../img/11.jpg);
+  /* 배경 이미지의 크기 조절 */
+  background-size: 220px;
+  /* 배경 이미지의 반복 방법 조절 */
+  background-repeat: no-repeat;
+  /* 배경 이미지 위치를 조절 */
+  background-position: top 0 right 0;
+  opacity: 0.5;
+}
+
+.div-gradation {
+  width: 500px;
+  height: 200px;
+  background-color: #000;
+  /* 선형 그라데이션 */
+  /* background: linear-gradient(180deg, #000, #fff 20%, #000fff); */
+  /* 원형 그라데이션 */
+  background: radial-gradient(circle at 0% 50%, #000, #fff, #000fff);
+}
