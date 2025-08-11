@@ -1,0 +1,10 @@
+/* .required-sign {
+  color: red;
+} */
+
+/* 가상요소 */
+.required-sign::after {
+  content: '*';
+  color: red;
+}
+

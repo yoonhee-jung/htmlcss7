@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11_tng</title>
+  <link rel="stylesheet" href="11_tng.css">
+</head>
+<body>
+
+  <div class="container">
+    <form action="">
+
+      <fieldset class="fieldset-bg-img">
+        <legend class="legend-title">I want YOU!</legend>
+
+          <div class="input-box">
+            <label for="name" class="required-sign">이름</label>
+            <input type="text" name="name" id="name" class="focus-border box-opacity">
+          </div>
+
+          <div class="input-box">
+            <label for="age" class="required-sign">나이</label>
+            <input type="number" name="age" id="age" class="box-opacity focus-border" min="20" required>
+          </div>
+
+          <div class="input-box">
+            <span class="required-sign">성별</span>
+            <input type="radio" name="gender" id="male" class="chk-color">
+            <label for="male">남자</label>
+            <input type="radio" name="gender" id="female" class="chk-color">
+            <label for="female">여자</label>
+          </div>
+         
+          <div class="input-box">
+            <label for="requestMemo">요청사항</label>
+            <textarea class="txa-request-Memo box-opacity focus-border" name="txa-request-Memo" id="requestMemo" placeholder="요청 사항 입력" cols="35" rows="10"></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">보내기</button>
+          <!-- <span class="forhover">내용을 다시 한 번 확인해 주세요.</span> -->
+
+      </fieldset>
+    </form>
+
+  </div>
+</body>
