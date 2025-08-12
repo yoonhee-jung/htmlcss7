@@ -1,0 +1,20 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+}
+
+@media (max-width: 500px) {
+  div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  div {
+    background-color: blue;
+    display: none;
+  }
+}
