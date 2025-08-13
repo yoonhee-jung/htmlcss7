@@ -28,7 +28,6 @@
   /* auto-fit : 그리드 아이템의 갯수와 셀의 갯수가 일치한 채로 너비 조절 */
   /* auto-fill : min으로 설정한 공간에 들어갈 수 있다면 빈 셀을 증가 시키며 조절 */
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  
   gap: 20px 0;
 }
 

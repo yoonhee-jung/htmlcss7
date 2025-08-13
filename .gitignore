@@ -3,7 +3,8 @@
 # ./html/02_listTag.html(이렇게 적어야 하는 때도 있음)
 # html(폴더 전체를 제외시키는 때)
 # img/ (폴더 내 이미지까지. 그런데 copy path나 live server 이 때 사진이 뜸)
-img/
-html/video
+/img/
+html/video/
 # push할 github 파일 내에서 제외하는 것..
 newfolder/
+marvel/img/
